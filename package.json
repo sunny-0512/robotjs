@@ -11,7 +11,9 @@
     "test:win32": "jasmine test/**/*.js",
     "install": "prebuild-install || node-gyp rebuild",
     "install-debug": "prebuild-install || node-gyp rebuild --debug",
-    "prebuild": "prebuild --all"
+    "prebuild": "prebuild --all",
+    "rebuild": "npm rebuild --runtime=electron --target=21.4.4 --disturl=https://atom.io/download/atom-shell --abi=93"
+  
   },
   "repository": {
     "type": "git",
